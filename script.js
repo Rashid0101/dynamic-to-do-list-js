@@ -32,17 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Append the remove button to the list item, then the list item to the task list
         listItem.appendChild(removeButton);
-        taskList.appendChild(listItem);
-
-        // Clear the task input field
-        taskInput.value = '';
-    }
-
-    // Attach event listeners to the add button and the input field for keypress (Enter key)
-    addButton.addEventListener('click', addTask);
-    taskInput.addEventListener('keypress', (event) => {
-        if (event.key === 'Enter') {
-            addTask();
-        }
-    });
-});
+       
